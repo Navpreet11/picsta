@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picsta</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: 'Pixelify Sans', sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 40px;
+        }
+
+        .loading-text {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .loading-icon {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">Picsta</h1>
+       
+        <img class="loading-icon" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif" width="40" height="40" alt="Loading icon">
+    </div>
+
+    <script>
+        // Redirect to the realanding route after 2 seconds
+        setTimeout(function() {
+            window.location.href = "{{ url_for('realanding') }}";
+        }, 5000);
+    </script>
+</body>
+</html>
