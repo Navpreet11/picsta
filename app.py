@@ -5,7 +5,7 @@ from datetime import datetime,timedelta
 import urllib.request
 import time
 import smtplib
-import openai
+#import openai
 #from bardapi import Bard
 #pip install bardapi
 #pip install torch
