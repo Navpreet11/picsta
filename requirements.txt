@@ -14,4 +14,4 @@ Gunicorn
 Werkzeug==2.0.0
 torch==2.3.0
 transformers==4.40.2
-urllib3==1.26.6
+urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1
