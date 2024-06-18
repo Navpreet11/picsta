@@ -5,8 +5,8 @@ python_jwt
 gcloud 
 sseclient
 pycryptodome
-requests-toolbelt==0.8.0
-requests==2.22.0
+requests==2.31.0
+requests-toolbelt==0.10.1
 cohere==5.4.0
 feedparser==6.0.2
 Flask==2.0.1
